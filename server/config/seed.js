@@ -232,6 +232,7 @@ Product.find(function (err, data) {
             "price" : 1699.0000000000000000,
             "RAM" : "16GB",
             "Screen" : "14 inch",
+            "weight" : "130g",
             "image" : "dell-inspiron-5459-i5.jpg"
         },
         {
@@ -239,6 +240,7 @@ Product.find(function (err, data) {
             "price" : 3400.0000000000000000,
             "RAM" : "8GB",
             "Screen" : "15.6 inch",
+            "weight" : "130g",
             "image" : "dell-inspiron-n5459-core-i5-with-4gb-gfx.jpg"
         },
         {
@@ -246,13 +248,15 @@ Product.find(function (err, data) {
             "price" : 6899.0000000000000000,
             "RAM" : "2GB",
             "Screen" : "15.6 inch",
+            "weight" : "130g",
             "image" : "dell-inspiron-5459-i5-red-color.jpg"
         },
         {
             "mrp" : 7000.0000000000000000,
             "price" : 7000.0000000000000000,
             "RAM" : "32GB",
-            "weight" : "11.6 inch",
+            "screen" : "11.6 inch",
+            "weight" : "130g",
             "image" : "dell-inspiron-5459-i5.jpg"
         },
         {
@@ -260,6 +264,7 @@ Product.find(function (err, data) {
             "price" : 7200.0000000000000000,
             "RAM" : "64GB",
             "Screen" : "15.6 inch",
+            "weight" : "130g",
             "image" : "dell-inspiron-5459-i5-silver-color.jpg"
         }
     ],
@@ -319,35 +324,40 @@ Product.find(function (err, data) {
           "price" : 1699.0000000000000000,
           "RAM" : "16GB",
           "Screen" : "14 inch",
-          "image" : "Samsung-Galaxy-S7-Edge_946.jpg"
+            "weight" : "130g",
+            "image" : "Samsung-Galaxy-S7-Edge_946.jpg"
         },
         {
           "mrp" : 3400.0000000000000000,
           "price" : 3400.0000000000000000,
           "RAM" : "8GB",
           "Screen" : "15.6 inch",
-          "image" : "Samsung-Galaxy-S7-Edge_946.jpg"
+            "weight" : "130g",
+            "image" : "Samsung-Galaxy-S7-Edge_946.jpg"
         },
         {
           "mrp" : 6899.0000000000000000,
           "price" : 6899.0000000000000000,
           "RAM" : "2GB",
           "Screen" : "15.6 inch",
-          "image" : "Samsung-Galaxy-S7-Edge_946.jpg"
+            "weight" : "130g",
+            "image" : "Samsung-Galaxy-S7-Edge_946.jpg"
         },
         {
           "mrp" : 7000.0000000000000000,
           "price" : 7000.0000000000000000,
           "RAM" : "32GB",
-          "weight" : "11.6 inch",
-          "image" : "Samsung-Galaxy-S7-Edge_946.jpg"
+          "Screen" : "11.6 inch",
+            "weight" : "130g",
+            "image" : "Samsung-Galaxy-S7-Edge_946.jpg"
         },
         {
           "mrp" : 7200.0000000000000000,
           "price" : 7200.0000000000000000,
           "RAM" : "64GB",
           "Screen" : "15.6 inch",
-          "image" : "Samsung-Galaxy-S7-Edge_946.jpg"
+            "weight" : "130g",
+            "image" : "Samsung-Galaxy-S7-Edge_946.jpg"
         }
       ],
       "keyFeatures" : [],
@@ -406,35 +416,40 @@ Product.find(function (err, data) {
           "price" : 1699.0000000000000000,
           "RAM" : "16GB",
           "Screen" : "14 inch",
-          "image" : "product_asuspc_N551JK.jpg"
+            "weight" : "130g",
+            "image" : "product_asuspc_N551JK.jpg"
         },
         {
           "mrp" : 3400.0000000000000000,
           "price" : 3400.0000000000000000,
           "RAM" : "8GB",
           "Screen" : "15.6 inch",
-          "image" : "product_asuspc_N551JK.jpg"
+            "weight" : "130g",
+            "image" : "product_asuspc_N551JK.jpg"
         },
         {
           "mrp" : 6899.0000000000000000,
           "price" : 6899.0000000000000000,
           "RAM" : "2GB",
           "Screen" : "15.6 inch",
-          "image" : "product_asuspc_N551JK.jpg"
+            "weight" : "130g",
+            "image" : "product_asuspc_N551JK.jpg"
         },
         {
           "mrp" : 7000.0000000000000000,
           "price" : 7000.0000000000000000,
           "RAM" : "32GB",
-          "weight" : "11.6 inch",
-          "image" : "product_asuspc_N551JK.jpg"
+          "Screen" : "11.6 inch",
+            "weight" : "130g",
+            "image" : "product_asuspc_N551JK.jpg"
         },
         {
           "mrp" : 7200.0000000000000000,
           "price" : 7200.0000000000000000,
           "RAM" : "64GB",
           "Screen" : "15.6 inch",
-          "image" : "product_asuspc_N551JK.jpg"
+            "weight" : "130g",
+            "image" : "product_asuspc_N551JK.jpg"
         }
       ],
       "keyFeatures" : [],

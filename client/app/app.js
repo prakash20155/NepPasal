@@ -15,7 +15,8 @@ angular.module('NepPasalApp', [
   'infinite-scroll',
   'darthwade.dwLoading',
   'angularMoment',
-  'ui.select'
+  'ui.select',
+  'ngMap'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider

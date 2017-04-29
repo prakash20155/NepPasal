@@ -49,7 +49,7 @@ angular.module('NepPasalApp')
           $scope.product.features = [];
       }
 
-      if('size' in $scope.variant){
+      if('RAM' in $scope.variant){
         $scope.product.variants.push($scope.variant);
         // console.log($scope.product.variants);
       }
