@@ -50,7 +50,7 @@ _________________________________________________________ -->
           <div class="row" id="productMain">
               <div class="col-sm-6">
                   <div id="mainImage">
-                      <img src="/assets/electronics/{{product.variants[0].image}}" err-src="/assets/images/photo.png" alt="{{product.name}}" class="img-responsive">
+                      <img ng-src="/assets/electronics/{{product.variants[0].image}}" err-src="/assets/images/photo.png" alt="{{product.name}}" class="img-responsive">
                   </div>
                 <div class="ribbon new">
                   <div class="theribbon">NEW</div>
@@ -82,16 +82,16 @@ _________________________________________________________ -->
 
                         <a ng-click="cart.addItem(product._id, product.name, product.slug, product.variants[0].mrp, product.variants[0].price, +1)" ng-hide="checkCart(product._id)" class="btn btn-primary">+</a>
                         </div>
-                        <a ng-click="cart.addItem(product._id, product.name, product.slug, product.variants[0].mrp, product.variants[0].price, 1, product.variants[0].image,product.category, product.variants[0].size ,true);" ng-show="checkCart(product._id)" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                        <a ng-click="cart.addItem(product._id, product.name, product.slug, product.variants[0].mrp, product.variants[0].price, 1, product.variants[0].image,product.category, product.variants[0].RAM ,true);" ng-show="checkCart(product._id)" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                       </div>
 
                   </div>
 
                   <div class="row" id="thumbs">
-                      <div class="col-xs-4" ng-repeat="v in product.variants" ng-click="changeIndex($index);" ng-if="v.size!=product.variants[i].size">
+                      <div class="col-xs-4" ng-repeat="v in product.variants" ng-click="changeIndex($index);" ng-if="v.RAM!=product.variants[i].RAM">
                           <a href="" class="thumb">
-                              <img src="/assets/electronics/{{v.image}}" err-src="/assets/images/photo.png" alt="{{product.name}}" class="img-responsive">
-                              {{product.name}} (Size: {{v.size}})
+                              <img ng-src="/assets/electronics/{{v.image}}" err-src="/assets/images/photo.png" alt="{{product.name}}" class="img-responsive">
+                              {{product.name}} (RAM: {{v.RAM}})
                               <p class="price"><del class="text-muted" ng-if="v.price!=v.mrp" >${{v.mrp}}</del>&nbsp;${{v.price}}</p>
                           </a>
                       </div>

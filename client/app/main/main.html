@@ -83,11 +83,11 @@
                                     </div>
                                 </div>
                                 <a ui-sref="productDetail({id:product._id, slug:product.slug})" class="invisible">
-                                    <img src="/assets/electronics/{{product.variants[0].image}}" alt="" class="img-responsive">
+                                    <img ng-src="/assets/electronics/{{product.variants[0].image}}" alt="" class="img-responsive">
                                 </a>
                                 <div class="text text-center">
-                                    <h3><a ui-sref="productDetail({id:product._id, slug:product.slug})">{{product.name}}{{product.variants[0].size}}</a></h3>
-                                    <p class="price"><del ng-if="product.variants[0].price!=product.variants[0].mrp">{{product.variants[0].mrp | currency : '$'}}</del> {{product.variants[0].price | currency : '$'}}</p>
+                                    <h3><a ui-sref="productDetail({id:product._id, slug:product.slug})">{{product.name}}{{product.variants[0].RAM}}</a></h3>
+                                    <p class="price"><del ng-if="product.variants[0].price != product.variants[0].mrp">{{product.variants[0].mrp | currency : '$'}}</del> {{product.variants[0].price | currency : '$'}}</p>
                                     <p class="buttons">
                                       <div class="btn-group">
                                       <a ui-sref="productDetail({id:product._id, slug:product.slug})" class="btn btn-default">View detail</a>
@@ -97,7 +97,7 @@
 
                                       <a ng-click="cart.addItem(product._id, product.name, product.slug, product.variants[0].mrp, product.variants[0].price, +1)" ng-hide="checkCart(product._id)" class="btn btn-info">+</a>
                                       </div>
-                                      <a ng-click="cart.addItem(product._id, product.name, product.slug, product.variants[0].mrp, product.variants[0].price, 1, product.variants[0].image,product.category, product.variants[0].size ,true);" ng-show="checkCart(product._id)" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                      <a ng-click="cart.addItem(product._id, product.name, product.slug, product.variants[0].mrp, product.variants[0].price, 1, product.variants[0].image,product.category, product.variants[0].RAM ,true);" ng-show="checkCart(product._id)" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                     </p>
                                 </div>
                                 <!-- /.text -->
@@ -129,7 +129,6 @@
             rz-slider-ceil="priceSlider.ceil"
             rz-slider-model="priceSlider.min"
             rz-slider-high="priceSlider.max"
-            rz-slider-translate="currencyFormatting"
             rz-slider-on-end="filter()"></rzslider>
 
           $<strong>{{priceSlider.min}}</strong> &nbsp;-&nbsp; $<strong>{{priceSlider.max}}</strong>
