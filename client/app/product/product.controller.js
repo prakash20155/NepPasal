@@ -63,6 +63,7 @@ angular.module('NepPasalApp')
         // console.log($scope.product.features);
       }
       $scope.variant = {};
+      //$scope.variant.image="23.jpg";
       $scope.newKF = {};
       $scope.newFeature = {};
 

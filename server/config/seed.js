@@ -403,7 +403,7 @@ Product.find(function (err, data) {
         "slug" : "acer",
         "info" : "Acer",
         "name" : "Acer",
-        "_id" : "5578c5c1wegfb6780c5yk85u"
+        "_id" : "5578c5c10000b6780c050005"
       },
       "nameLower" : "acer n51",
       "active" : true,

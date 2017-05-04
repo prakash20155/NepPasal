@@ -28,13 +28,17 @@ exports.index = function(req, res) {
   if(req.query){
     // console.log(req.query,req.query.skip,req.query.limit,req.query.sort);
     var q = isJson(req.query.where);
-    // console.log(q);
-    var sort = isJson(req.query.sort);
-    var select = isJson(req.query.select);
+     //console.log('sort',req.query.sort);
+      //console.log('select',req.query.select);
+      //console.log('where',req.query.where);
 
+      var sort = isJson(req.query.sort);
+    var select = isJson(req.query.select);
     Product.find(q).limit(req.query.limit).skip(req.query.skip).sort(sort).select(select).exec(function (err, products) {
       if(err) { return handleError(res, err); }
-      return res.status(200).json(products);
+        //console.log(products)
+
+        return res.status(200).json(products);
     });
   }else{
     Product.find(function (err, products) {

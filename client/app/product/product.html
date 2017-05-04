@@ -188,9 +188,9 @@
             <td>{{$index+1}}</td>
             <td><input type="text" ng-model="p.RAM" style="width:70px;" placeholder="RAM"/></td>
             <td><input type="text" ng-model="p.Screen" style="width:70px;" placeholder="Screen"/></td>
-            <td><input type="text" ng-model="p.mrp" style="width:70px;" placeholder="MRP"/></td>
-            <td><input type="text" ng-model="p.price" style="width:70px;" placeholder="Price"/></td>
-            <td><input type="text" ng-model="p.image" style="width:150px;" value="product_asuspc_N551JK.jpg" placeholder="Image"/></td>
+            <td><input type="number" ng-model="p.mrp" style="width:70px;" placeholder="MRP"/></td>
+            <td><input type="number" ng-model="p.price" style="width:70px;" placeholder="Price"/></td>
+            <td><input type="text" ng-model="p.image" style="width:150px;" placeholder="image name"/></td>
             <td>
                 <div class="btn-group">
                   <button type="button" class="btn btn-danger" ng-click="deleteVariants($index,product);"><i class="fa fa-trash-o"></i></button>
@@ -202,9 +202,9 @@
             <td>New</td>
             <td><input type="text" ng-model="variant.RAM" style="width:70px;" placeholder="RAM"/></td>
             <td><input type="text" ng-model="variant.Screen" style="width:70px;" placeholder="Screen"/></td>
-            <td><input type="text" ng-model="variant.mrp" style="width:70px;" placeholder="MRP"/></td>
-            <td><input type="text" ng-model="variant.price" style="width:70px;" placeholder="Price"/></td>
-            <td><input type="text" ng-model="variant.image" style="width:150px;" placeholder="Image"/></td>
+            <td><input type="number" ng-model="variant.mrp" style="width:70px;" placeholder="MRP"/></td>
+            <td><input type="number" ng-model="variant.price" style="width:70px;" placeholder="Price"/></td>
+            <td><input type="text" ng-model="variant.image" value="product_asuspc_N551JK.jpg" style="width:150px;" placeholder="Image name"/></td>
             <td>
 
             </td>
